@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./img/fav/favicon3.png" rel="icon" type="image/png" sizes="16x16" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- magnific popup css1 js1 -->
+    <link href="./magnific-popup-master/dist/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+
+    <title>Aung Chan Thar Hotel</title>
+</head>
+
+<body>
+
+    <!-- Start header section  -->
+    <header>
+        <!-- Start Nav bar  -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarcollapse" class="navbar-collapse collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">Room</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">Restaurant</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link ">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropbtn" onclick="dropbtn(event)">Faq</a>
+                            <div class="dropdown-contents mydropdowns">
+                                <input type="text" name="search" id="search" onkeyup="dropfilter()" class="search"
+                                    placeholder="Search ..." />
+                                <a href="#">Room Booking</a>
+                                <a href="#">Transportation</a>
+                                <a href="#">Payment</a>
+                                <a href="#">Wifi connection</a>
+                                <a href="#">Food</a>
+                                <a href="#">Bar</a>
+                                <a href="#">Spa</a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <div class="dropdown float-sm-end">
+                        <a href="#" class="dropdown-toggle text-decoration-none" data-bs-toggle="dropdown">
+                            <img src="./img/users/user1.jpg" class="rounded-circle" width="36px" height="36px"
+                                alt="user1" />
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Profile</a></li>
+                            <li><a href="#" class="dropdown-item">Invoices</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a href="#" class="dropdown-item">Sign Out</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </nav>
+        <!-- End Nav bar  -->
+
+        <!-- Start Banner  -->
+        <div class="container-fluid">
+            <div id="banners" class="banners">
+                <h1 class="display-4 bannerheaders">Aung Chan Thar Hotel</h1>
+                <p class="lead bannerparagraphs">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+        </div>
+        <!-- End Banner  -->
+    </header>
+    <!-- End header Section -->
+
+
+
+    <!-- Start booking section  -->
+    <section id="booking" class="search-rooms text-center">
+        <form action="" method="">
+            <input type="date" name="checkin" id="checkin" class="form-control" />
+            <input type="date" name="checkout" id="checkout" class="form-control" />
+            <select name="adult" id="adult" class="form-control">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adult</option>
+                <option value="3">3 Adult</option>
+                <option value="4">4 Adult</option>
+            </select>
+            <input type="text" name="schroom" id="schroom" class="form-control" placeholder="Search Somethings" />
+            <input type="button" class="btn btn-primary rounded-0" value="Search Room" />
+        </form>
+    </section>
+    <!-- End booking section -->
+
+
+
+
+    <!-- Start room section  -->
+    <section id="room" class="rooms py-5 mt-3">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h4>Our rooms</h4>
+                        <p class="text-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rows">
+                <div class="columns">
+                    <a class="test-popup-link" href="./img/gallery/image1.jpg"> <img
+                            src="./img/gallery/image1.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image2.jpg"> <img
+                            src="./img/gallery/image2.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image3.jpg"> <img
+                            src="./img/gallery/image3.jpg" /></a>
+                </div>
+
+                <div class="columns">
+                    <a class="test-popup-link" href="./img/gallery/image4.jpg"> <img
+                            src="./img/gallery/image4.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image5.jpg"> <img
+                            src="./img/gallery/image5.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image6.jpg"> <img
+                            src="./img/gallery/image6.jpg" /></a>
+                </div>
+
+                <div class="columns">
+                    <a class="test-popup-link" href="./img/gallery/image7.jpg"> <img
+                            src="./img/gallery/image7.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image8.jpg"> <img
+                            src="./img/gallery/image8.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image9.jpg"> <img
+                            src="./img/gallery/image9.jpg" /></a>
+                </div>
+
+                <div class="columns">
+                    <a class="test-popup-link" href="./img/gallery/image1.jpg"> <img
+                            src="./img/gallery/image1.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image3.jpg"> <img
+                            src="./img/gallery/image3.jpg" /></a>
+                    <a class="test-popup-link" href="./img/gallery/image2.jpg"> <img
+                            src="./img/gallery/image2.jpg" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End room section -->
+
+
+
+    <!-- Start services section  -->
+    <section id="services" class="pt-5 text-center py-4">
+        <div class="container">
+
+            <div class="row pb-5">
+                <div class="col-md-12">
+                    <h4>Our Services</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="iconboxs">
+                        <div class="icons"><i class="fas fa-car fa-2x"></i></div>
+                        <h4>Airport Transportation</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
+                        <button type="button" class="btn btn-outline-dark rounded-0" onclick="dropbtn(event)">More
+                            Info</button>
+                        <div class="dropdown-contents">
+                            <a href="javascript:void(0);">Hotel Limousines</a>
+                            <a href="javascript:void(0);">Drivers</a>
+                            <a href="javascript:void(0);">Visit City</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="iconboxs">
+                        <div class="icons"><i class="fas fa-clock fa-2x"></i></div>
+                        <h4>Quick Check In/Out</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
+                        <button type="button" class="btn btn-outline-dark rounded-0" onclick="dropbtn(event)">More
+                            Info</button>
+                        <div class="dropdown-contents">
+                            <a href="javascript:void(0);">Early Check In</a>
+                            <a href="javascript:void(0);">Lately Check Out</a>
+                            <a href="javascript:void(0);">Extra Half Day</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="iconboxs dropdowns">
+                        <div class="icons"><i class="fas fa-building fa-2x"></i></div>
+                        <h4>24/7 Room Services</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
+                        <button type="button" class="btn btn-outline-dark rounded-0" onclick="dropbtn(event)">More
+                            Info</button>
+                        <div class="dropdown-contents">
+                            <a href="javascript:void(0);">Cleaning Services</a>
+                            <a href="javascript:void(0);">Food Order</a>
+                            <a href="javascript:void(0);">Outdoor Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End services section -->
+
+
+
+
+    <!-- Start testimonials  -->
+    <section id="testimonials" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="testimonial-container">
+                    <div class="fas fa-quote-right fa-quotes"></div>
+                    <div class="fas fa-quote-left fa-quotes"></div>
+
+                    <div class="conpany">
+                        <h4 class="companyname">Rich Star Restaurant</h4>
+                        <p class="role">Our Outlet</p>
+                    </div>
+
+                    <p class="testimonial">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is
+                        simply dummy text of the printing and typesetting industry.</p>
+
+                    <div class="progress-bar">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End testimonials -->
+
+
+
+    <!-- Start Blog section  -->
+    <section id="blog" class="py-3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/random/300x200" class="" alt="blg1" />
+                        <div class="card-body">
+                            <h6 class="card-title">Blog Post One</h6>
+                            <p class="small">Written by Mr.Aton on 02/Oct/2022</p>
+                            <hr />
+                            <p class="card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/random/300x201" class="" alt="blg1" />
+                        <div class="card-body">
+                            <h6 class="card-title">Blog Post One</h6>
+                            <p class="small">Written by Mr.Aton on 02/Oct/2022</p>
+                            <hr />
+                            <p class="card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/random/301x200" class="" alt="blg1" />
+                        <div class="card-body">
+                            <h6 class="card-title">Blog Post One</h6>
+                            <p class="small">Written by Mr.Aton on 02/Oct/2022</p>
+                            <hr />
+                            <p class="card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Blog section -->
+
+
+
+    <!-- Start ADV box section  -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-hiking fa-3x"></i>
+                            <h3>Activities</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-spa fa-3x"></i>
+                            <h3>Activities</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-crown fa-3x"></i>
+                            <h3>Activities</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-box fa-3x"></i>
+                            <h3>Activities</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-credit-card fa-3x"></i>
+                            <h3>Activities</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-coffee fa-3x"></i>
+                            <h3>Activities</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End ADV box section -->
+
+
+
+    <!-- Start ADV test section  -->
+    <section class="adv-container">
+        <p class="advtext">Love The Nature <br/> @ACT Hotel </p>
+    </section>
+    <!-- End ADV test  section -->
+
+
+
+    <!-- Start staffs section  -->
+    <section id="staffs" class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="cards mb-3">
+                    <img src="./img/users/user1.jpg" />
+                    <h4>Ms.July</h4>
+                    <p class="title">CEO & Founder</p>
+                    <p>Harvard University</p>
+                    <div>
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button type="button">Contact</button>
+                </div>
+
+                <div class="cards mb-3">
+                    <img src="./img/users/user2.jpg" />
+                    <h4>Ms.July</h4>
+                    <p class="title">CEO & Founder</p>
+                    <p>Harvard University</p>
+                    <div>
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button type="button">Contact</button>
+                </div>
+
+                <div class="cards mb-3">
+                    <img src="./img/users/user3.jpg" />
+                    <h4>Ms.July</h4>
+                    <p class="title">CEO & Founder</p>
+                    <p>Harvard University</p>
+                    <div>
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button type="button">Contact</button>
+                </div>
+
+                <div class="cards mb-3">
+                    <img src="./img/users/user1.jpg" />
+                    <h4>Ms.July</h4>
+                    <p class="title">CEO & Founder</p>
+                    <p>Harvard University</p>
+                    <div>
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button type="button">Contact</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End staffs section -->
+
+
+    <!-- Start property section  -->
+    <section id="properties" class="py-5">
+        <div class="container-fluid">
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h4>Properties</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+
+            <ul id="filtercontrol" class="list-inline text-center text-uppercase fw-bold my-3">
+                <li class="list-inline-item propertylists activeitems" onclick="filterby('all')">All <span class="mx-md-5 mx-3 text-muted">/</span></li>
+                <li class="list-inline-item propertylists" onclick="filterby('room')">Room <span class="mx-md-5 mx-3 text-muted">/</span></li>
+                <li class="list-inline-item propertylists" onclick="filterby('decoration')">Decoration <span class="mx-md-5 mx-3 text-muted">/</span></li>
+                <li class="list-inline-item propertylists" onclick="filterby('furniture')">Furniture <span class="mx-md-5 mx-3 text-muted">/</span></li>
+                <li class="list-inline-item propertylists" onclick="filterby('office')">Office</li>
+            </ul>
+
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="filters room"><img src="./img/gallery/image1.jpg" width="200px"/></div>
+                    <div class="filters room"><img src="./img/gallery/image2.jpg" width="200px"/></div>
+                    <div class="filters room"><img src="./img/gallery/image3.jpg" width="200px"/></div>
+                    <div class="filters decoration"><img src="./img/gallery/image4.jpg" width="200px"/></div>
+                    <div class="filters decoration"><img src="./img/gallery/image5.jpg" width="200px"/></div>
+                    <div class="filters decoration"><img src="./img/gallery/image6.jpg" width="200px"/></div>
+                    <div class="filters furniture"><img src="./img/gallery/image7.jpg" width="200px"/></div>
+                    <div class="filters furniture"><img src="./img/gallery/image8.jpg" width="200px"/></div>
+                    <div class="filters furniture"><img src="./img/gallery/image9.jpg" width="200px"/></div>
+                    <div class="filters office"><img src="./img/gallery/image1.jpg" width="200px"/></div>
+                    <div class="filters office"><img src="./img/gallery/image2.jpg" width="200px"/></div>
+                    <div class="filters office"><img src="./img/gallery/image3.jpg" width="200px"/></div>
+                    <div class="filters room"><img src="./img/gallery/image4.jpg" width="200px"/></div>
+                    <div class="filters decoration"><img src="./img/gallery/image5.jpg" width="200px"/></div>
+                    <div class="filters furniture"><img src="./img/gallery/image6.jpg" width="200px"/></div>
+                    <div class="filters office"><img src="./img/gallery/image7.jpg" width="200px"/></div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End property section -->
+
+
+
+    <!-- Start contact section  -->
+    <section id="contact" class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-sm-none d-md-block">
+                    <div class="tabbooks">
+                        <div id="phone" class="tabcontents">
+                            <h1>Phone</h1>
+                            <p>Office : 09 4220 4222 5</p>
+                            <p>Office : 09 4220 4222 8</p>
+                        </div>
+                        <div id="social" class="tabcontents">
+                            <h1>Social</h1>
+                            <p>Viber : @aongchanthar</p>
+                            <p>Line : @aungchanthar</p>
+                        </div>
+                        <div id="website" class="tabcontents">
+                            <h1>Website</h1>
+                            <p>Web : www.aungchanthar.com</p>
+                            <p>Email : admin@aungchanthar.com</p>
+                        </div>
+                        <div id="address" class="tabcontents">
+                            <h1>Address</h1>
+                            <p>No.120, Between 100/200, Mandalay, Myanmar.</p>
+                        </div>
+                        <button type="button" id="autoclick" class="btn-tabs" onclick="tabbox('phone',event.target, 'gray')">Phone</button>
+                        <button type="button" class="btn-tabs" onclick="tabbox('social',event.target, 'slateblue')">Social</button>
+                        <button type="button" class="btn-tabs" onclick="tabbox('website',this, 'slategray')">Website</button>
+                        <button type="button" class="btn-tabs" onclick="tabbox('address',this, 'steelblue')">Address</button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="text-center">Please fill this form to contact us.</h4>
+                            <hr/>
+                            <form action="" methd="">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" name="firstname" id="firstname" class="form-control form-control-sm rounded-0" placeholder="First Name" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" name="lastname" id="lastname" class="form-control form-control-sm rounded-0" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" name="phone" id="phone" class="form-control form-control-sm rounded-0" placeholder="Phone Number" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" class="form-control rounded-0" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+    
+                                    <div class="d-grid">
+                                        <input type="submit" class="btn btn-outline-secondary" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End contact section -->
+
+
+
+    <!-- Start Our Pricing section  -->
+    <div class="row text-center">
+        <div class="col-12">
+            <h4>Our Pricing</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card text-center">
+                    <div class="card-header bg-dark text-white">
+                        <h3>Single Room</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>$ 100</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-check"></i>Wi-Fi</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Parking</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Pool</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Fitness Center</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Spa</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-dark">Check Out</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <b>Airport Transportation Free</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card text-center">
+                    <div class="card-header bg-dark text-white">
+                        <h3>Single Room</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>$ 100</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-check"></i>Wi-Fi</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Parking</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Pool</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Fitness Center</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Spa</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-dark">Check Out</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <b>Airport Transportation Free</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card text-center">
+                    <div class="card-header bg-dark text-white">
+                        <h3>Single Room</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>$ 100</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-check"></i>Wi-Fi</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Parking</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Pool</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Fitness Center</li>
+                            <li class="list-group-item"><i class="fas fa-check"></i>Spa</li>
+                        </ul>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-dark">Check Out</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <b>Airport Transportation Free</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End our Pricing section -->
+
+
+
+    <!-- Start footer section  -->
+    <footer class="bg-dark pt-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Rooms</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-muted px-2">FAQs</a></li>
+        </ul>
+        <div class="text-light d-flex justify-content-center">
+            <p>&copy; <span id="getyear"></span>Copyright, Inc. All Rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End footer section -->
+
+
+
+
+    <!-- Start chat box  -->
+    <button class="chat-btn" onclick=""><i class="fas fa-comment-alt"></i></button>
+    <div id="mychat" class="chat-popup">
+        <div class="form-container">
+            <h4>Chat</h4>
+            <div class="messsages">
+                <div class="containers admin">
+                    <p>Hello! How can i help you?</p>
+                    <span class="time-right">13:00</span>
+                </div>
+
+                <div class="containers user">
+                    <p>Thanks for your reply!</p>
+                    <span class="time-right">13:01</span>
+                </div>
+
+                <div class="containers admin">
+                    <p>Do you want to serve room?</p>
+                    <span class="time-right">13:02</span>
+                </div>
+
+                <div class="containers user">
+                    <p>Sure! let me see the price for mountain view?</p>
+                    <span class="time-right">13:03</span>
+                </div>
+            </div>
+
+            <form action="" method="">
+                <textarea name="message" id="message" class="message" placeholder="Message Here..."></textarea>
+                <button type="submit" class="btns">Send</button>
+                <button type="button" class="btns" onclick="">Close</button>
+            </form>
+        </div>
+    </div>
+    <!-- End chat box -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" type="text/javascript"></script>
+
+    <!-- magnific popup css1 js1 -->
+    <script src="./magnific-popup-master/dist/jquery.magnific-popup.min.js" type="text/javascript"></script>
+
+    <script src="./js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+
+
+<!-- link for generating random photo
+https://source.unsplash.com/random/300x200 -->
+
+<!-- 10CD -->
+<!-- 17ST -->
